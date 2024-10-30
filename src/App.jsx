@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import ProductCarousel from './components/ProductCarousel';
+import HomePage from './components/HomePage';
 import CartPage from './pages/CartPage';
 import WishlistPage from './pages/WishlistPage';
 import { CartProvider } from './context/CartContext';
@@ -15,10 +15,18 @@ function App() {
       <WishlistProvider>
         <div className="min-h-screen bg-gray-100 flex flex-col">
           <Navbar onNavigate={setCurrentPage} currentPage={currentPage} />
-          <main className="container mx-auto px-4 py-8 flex-grow">
-            {currentPage === 'home' && <ProductCarousel />}
-            {currentPage === 'cart' && <CartPage />}
-            {currentPage === 'wishlist' && <WishlistPage />}
+          <main className="flex-grow">
+            {currentPage === 'home' && <HomePage />}
+            {currentPage === 'cart' && (
+              <div className="container mx-auto px-4 py-8">
+                <CartPage />
+              </div>
+            )}
+            {currentPage === 'wishlist' && (
+              <div className="container mx-auto px-4 py-8">
+                <WishlistPage />
+              </div>
+            )}
           </main>
           <Footer />
         </div>

@@ -23,9 +23,9 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Contact Info</h3>
             <ul className="space-y-2 text-gray-600">
-              <li>Email: info@example.com</li>
+              <li>Email: ShopMart@gmail.com</li>
               <li>Phone: (555) 123-4567</li>
-              <li>Address: 123 Store St, City, State</li>
+              <li>Address: 123A ShopMart Store, Varanasi, Uttar Pradesh</li>
             </ul>
           </div>
           <div>
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t mt-8 pt-8 text-center text-gray-600">
-          <p>© {new Date().getFullYear()} Your Store Name. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} ShopMart. All rights reserved.</p>
         </div>
       </div>
     </footer>
