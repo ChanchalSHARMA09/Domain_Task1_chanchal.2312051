@@ -13,6 +13,11 @@ export default function Navbar({ onNavigate, currentPage }) {
     <nav className="bg-white shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
+          
+          <div className="text-black font-bold text-4xl">
+            ShopMart
+          </div>
+
           <div className="flex items-center space-x-8">
             <button 
               onClick={() => onNavigate('home')}
@@ -47,3 +52,23 @@ export default function Navbar({ onNavigate, currentPage }) {
     </nav>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

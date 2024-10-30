@@ -6,22 +6,28 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative container mx-auto px-4 py-24">
         <div className="max-w-3xl">
-          <h1 className="text-5xl font-bold mb-6">
+          <h1 className="text-5xl font-bold mb-6 leading-tight">
             Discover Exceptional Products
           </h1>
           <p className="text-xl mb-8 text-gray-200">
-            Explore our curated collection of premium products designed to elevate your lifestyle.
+            Explore our curated collection of premium products designed to elevate your lifestyle. 
             Find the perfect items that match your unique style.
           </p>
           <div className="flex space-x-4">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 flex items-center">
+            <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 flex items-center shadow-md transform hover:scale-105">
               Shop Now <FaArrowRight className="ml-2" />
             </button>
-            <button className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
+            <button className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition duration-300 shadow-md transform hover:scale-105">
               Learn More
             </button>
           </div>
         </div>
+      </div>
+     
+      <div className="absolute bottom-0 left-0 right-0 text-center">
+        <p className="text-lg italic text-gray-300">
+          Your journey to discovering quality starts here!
+        </p>
       </div>
     </div>
   );
