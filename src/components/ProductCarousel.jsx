@@ -109,45 +109,6 @@ const products = [
   }
 ];
 
-// export default function ProductCarousel() {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-
-//   useEffect(() => {
-//     const timer = setInterval(() => {
-//       setCurrentIndex((prevIndex) => (prevIndex + 1) % products.length);
-//     }, 3000);
-
-//     return () => clearInterval(timer);
-//   }, []);
-
-//   const visibleProducts = [
-//     products[(currentIndex - 1 + products.length) % products.length],
-//     products[currentIndex],
-//     products[(currentIndex + 1) % products.length],
-//   ];
-
-//   return (
-//     <div className="relative overflow-hidden py-8">
-//       <div className="flex justify-center items-center gap-8">
-//         {visibleProducts.map((product, index) => (
-//           <div key={product.id} className={`transform transition-all duration-500 ${index === 1 ? 'scale-110 z-10' : 'scale-90 opacity-70'}`}>
-//             <ProductCard product={product} />
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
 export default function ProductCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
